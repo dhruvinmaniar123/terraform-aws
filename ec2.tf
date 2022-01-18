@@ -1,11 +1,11 @@
-# terraform {
-#   required_providers {
-#     aws = {
-#       source  = "hashicorp/aws"
-#       version = "~> 3.0"
-#     }
-#   }
-# }
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.0"
+    }
+  }
+}
 
 # Configure the AWS Provider
 provider "aws" {
@@ -13,7 +13,7 @@ provider "aws" {
   access_key = ""
   secret_key = ""
 }
-provider "azurerm" {  }
+
 #Configure AWS Instance
 
 resource "aws_instance" "my_ec2_demo" {
